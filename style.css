@@ -17,6 +17,7 @@ body {
     color: #e3d9d9;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
+    text-halfcolor: 1px blue;
     /* border-bottom: 1px solid black; */
 /*     border: 1px solid #000;
     border-radius: 5px; */
