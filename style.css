@@ -18,6 +18,10 @@ body {
     font-family: Arial, sans-serif;
     text-transform: uppercase;
     text-halfcolor: 1px blue;
+    font-size: 3rem;
+    color: white; /* Text color */
+    -webkit-text-stroke: 2px black; /* Stroke width and color */
+    text-align: center; /* Align text to center */
     /* border-bottom: 1px solid black; */
 /*     border: 1px solid #000;
     border-radius: 5px; */
