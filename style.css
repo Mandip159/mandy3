@@ -21,5 +21,14 @@ body {
     /* border-bottom: 1px solid black; */
 /*     border: 1px solid #000;
     border-radius: 5px; */
+    animation: moveText 5s linear infinite;
     
+}
+@keyframes moveText {
+    0% {
+        left: 0; /* Start at the left */
+    }
+    100% {
+        left: 100%; /* Move to the right end */
+    }
 }
