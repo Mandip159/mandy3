@@ -28,7 +28,7 @@ body {
     }
     75% {
         -webkit-text-stroke-color: green; /* Stroke turns green at 75% */
-          75% {
+          100% {
         -webkit-text-stroke-color:grey; }
     }
 }
