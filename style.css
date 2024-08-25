@@ -8,31 +8,34 @@ body {
     background-color: #a12172;
 }
 
-.message-container {
-    text-align: center;
+
+.animated-stroked-text {
+    font-size: 3rem;
+    color: transparent; /* Makes the fill color transparent to show only the stroke */
+    -webkit-text-stroke: 2px white; /* Stroke color and width */
+    animation: strokeAnimation 4s infinite linear, moveText 5s infinite linear; /* Apply both stroke color and movement animations */
 }
 
-.sorry-message {
-    font-size: 5em;
-    color: #e3d9d9;
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    text-halfcolor: 1px blue;
-    font-size: 5rem;
-    color: white; /* Text color */
-    -webkit-text-stroke: 2px black; /* Stroke width and color */
-    text-align: center; /* Align text to center */
-    /* border-bottom: 1px solid black; */
-/*     border: 1px solid #000;
-    border-radius: 5px; */
-    animation: moveText 5s linear infinite;
-    
+@keyframes strokeAnimation {
+    0%, 100% {
+        -webkit-text-stroke-color: white; /* Stroke starts and ends with white */
+    }
+    25% {
+        -webkit-text-stroke-color: red; /* Stroke turns red at 25% */
+    }
+    50% {
+        -webkit-text-stroke-color: blue; /* Stroke turns blue at 50% */
+    }
+    75% {
+        -webkit-text-stroke-color: green; /* Stroke turns green at 75% */
+    }
 }
+
 @keyframes moveText {
     0% {
-        left: 0; /* Start at the left */
+        transform: translateX(-100%); /* Start off-screen to the left */
     }
     100% {
-        left: 100%; /* Move to the right end */
+        transform: translateX(100%); /* Move off-screen to the right */
     }
 }
