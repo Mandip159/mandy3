@@ -1,43 +1,39 @@
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color:#343F4F;
+    margin: 0;
+    background: #f0f0f0;
 }
 
-
-.animated-stroked-text {
-    font-size: 3rem;
-    color: transparent; /* Makes the fill color transparent to show only the stroke */
-    -webkit-text-stroke: 2px white; /* Stroke color and width */
-    animation: strokeAnimation 4s infinite linear, moveText 5s infinite linear; /* Apply both stroke color and movement animations */
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-@keyframes strokeAnimation {
-    0%, 100% {
-        -webkit-text-stroke-color: white; /* Stroke starts and ends with white */
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: moveUp 0.5s forwards;
+}
+
+/* Define the keyframes for the animation */
+@keyframes moveUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    25% {
-        -webkit-text-stroke-color: red; /* Stroke turns red at 25% */
-    }
-    50% {
-        -webkit-text-stroke-color: blue; /* Stroke turns blue at 50% */
-    }
-    75% {
-        -webkit-text-stroke-color: green; /* Stroke turns green at 75% */
-          100% {
-        -webkit-text-stroke-color:grey; }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@keyframes moveText {
-    0% {
-        transform: translateX(-100%); /* Start off-screen to the left */
-    }
-    100% {
-        transform: translateX(100%); /* Move off-screen to the right */
-    }
-}
+/* Apply a delay to each span to animate them one by one */
+.animated-text span:nth-child(1) { animation-delay: 0s; }
+.animated-text span:nth-child(2) { animation-delay: 0.1s; }
+.animated-text span:nth-child(3) { animation-delay: 0.2s; }
+.animated-text span:nth-child(4) { animation-delay: 0.3s; }
+.animated-text span:nth-child(5) { animation-delay: 0.4s; }
