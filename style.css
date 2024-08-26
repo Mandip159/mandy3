@@ -71,11 +71,12 @@ body {
   top: 0;
   width: 80%;
   height: 80%;
-  background-color: #808080;
+  background-color: #cccccc;
+
   border-radius: 15px;
   z-index: 2;
   transition: 0.5s;
-  stroke: white;
+ text-stroke: white;
 }
 
 .letter p {
