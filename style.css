@@ -60,10 +60,10 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  border-top: 100px solid 	#e0b8cc;
-  border-right: 150px solid #edabcc;
-  border-bottom: 100px solid #ff99ff;
-  border-left: 150px solid #f7a1cc;
+  border-top: 100px solid 	#66a3ff;
+  border-right: 150px solid  #4d94ff;
+  border-bottom: 100px solid #1a75ff;
+  border-left: 150px solid #3385ff;
   z-index: 3;
 }
 
