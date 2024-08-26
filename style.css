@@ -9,13 +9,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 200vh;
     margin: 0;
-    background: #f0f0f0;
+    background: #343F4F;
+    color: white;
+    text-stroke-color: 1px,0.125em,4in,etcetera;
 }
 
 .sorry {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
