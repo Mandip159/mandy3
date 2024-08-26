@@ -13,6 +13,7 @@ body {
     margin: 0;
     background: #343F4F;
     color: white;
+    overflow-y: hidden;
     text-stroke-color: 1px,0.125em,4in,etcetera;
 }
 
