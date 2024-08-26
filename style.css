@@ -28,6 +28,10 @@ body {
     transform: translateY(20px);
     animation: moveUp 0.5s forwards;
 }
+h1
+{
+    padding-top:10px;
+}
 
 /* Define the keyframes for the animation */
 @keyframes moveUp {
