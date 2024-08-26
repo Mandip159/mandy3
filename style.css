@@ -62,8 +62,8 @@ body {
   left: 0;
   border-top: 100px solid transparent;
   border-right: 150px solid #0080ff;
-  border-bottom: 100px solid #99ccff;
-  border-left: 150px solid #b399ff;
+  border-bottom: 100px solid #ff99ff;
+  border-left: 150px solid #f7a1cc;
   z-index: 3;
 }
 
