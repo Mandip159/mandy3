@@ -46,8 +46,8 @@ h1
 }
 
 /* Apply a delay to each span to animate them one by one */
-.sorry span:nth-child(1) { animation-delay: 0s; }
-.sorry span:nth-child(2) { animation-delay: 0.1s; }
-.sorry span:nth-child(3) { animation-delay: 0.2s; }
-.sorry span:nth-child(4) { animation-delay: 0.3s; }
+.y span:nth-child(1) { animation-delay: 0s; }
+.ry span:nth-child(2) { animation-delay: 0.1s; }
+.rry span:nth-child(3) { animation-delay: 0.2s; }
+.orry span:nth-child(4) { animation-delay: 0.3s; }
 .sorry span:nth-child(5) { animation-delay: 0.4s; }
