@@ -60,11 +60,14 @@ body {
   top: 0;
   left: 0;
   border-top: 100px solid transparent;
-  border-right: 150px solid #0080ff;
-  border-bottom: 100px solid #0080ff;
-  border-left: 150px solid #0080ff;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid transparent;
   z-index: 3;
+  background: linear-gradient(135deg, #FF6F61, #FFD700);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
 
 .letter {
   position: absolute;
